@@ -88,6 +88,17 @@ button_style = {
     "height": 2,
     "relief": "flat"
 }
+operator_style = {
+    "font": myfont,
+    "bg": "#393e46",
+    "fg": "#06bc52",
+    "activebackground": "#00adb5",
+    "activeforeground": "#222831",
+    "bd": 0,
+    "width": 4,
+    "height": 2,
+    "relief": "flat"
+}
 
 btn1 = Button(root, text="1", command=lambda:angka(1), **button_style)
 btn2 = Button(root, text="2", command=lambda:angka(2), **button_style)
@@ -100,12 +111,12 @@ btn8 = Button(root, text="8", command=lambda:angka(8), **button_style)
 btn9 = Button(root, text="9", command=lambda:angka(9), **button_style)
 btn0 = Button(root, text="0", command=lambda:angka(0), **button_style)
 
-tamb = Button(root, text="+", command=tambah, **button_style)
-kurng = Button(root, text="-", command=kurang, **button_style)
-kal = Button(root, text="×", command=kali, **button_style)
-bag = Button(root, text="÷", command=bagi, **button_style)
+tamb = Button(root, text="+", command=tambah, **operator_style)
+kurng = Button(root, text="-", command=kurang, **operator_style)
+kal = Button(root, text="×", command=kali, **operator_style)
+bag = Button(root, text="÷", command=bagi, **operator_style)
 haps = Button(root, text="C", command=hapus, font=myfont, bg="#ff5722", fg="#fff", activebackground="#ff784e", activeforeground="#222831", bd=0, width=4, height=2, relief="flat")
-samadngn = Button(root, text="=", command=samadengan, font=myfont, bg="#00adb5", fg="#222831", activebackground="#00cfcf", activeforeground="#222831", bd=0, width=4, height=2, relief="flat")
+samadngn = Button(root, text="=", command=samadengan, font=myfont, bg="#06bc52", fg="#fff", activebackground="#00cfcf", activeforeground="#222831", bd=0, width=4, height=2, relief="flat")
 
 btn7.grid(row=1, column=0, padx=5, pady=5)
 btn8.grid(row=1, column=1, padx=5, pady=5)
